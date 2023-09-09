@@ -1,6 +1,12 @@
 body{
     margin: 0;
     height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+main{
+    margin: 0;
+    height: 100vh;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -8,12 +14,43 @@ body{
     overflow: hidden;
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #242323;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    /* background-color: #04AA6D; */
+    color: white;
+  }
+
+
 .container{
     font-size: 10px;
     width: 40em;
     height: 40em;
     position: relative;
 }
+
+
 .sun{
     position: absolute;
     top: 15em;
