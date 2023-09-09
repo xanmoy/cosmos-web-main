@@ -26,7 +26,7 @@ body{
 }
 
 .earth, 
-.moon{
+.moon, .mars{
     position: absolute;
     border-style: solid;
     border-color: white transparent transparent transparent;
@@ -52,7 +52,8 @@ body{
 }
 
 .earth::before,
-.moon::before{
+.moon::before,
+.mars::before{
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -72,6 +73,21 @@ body{
     width: 1.2em;
     height: 1.2em;
     background-color: silver;
+}
+.mars::before{
+    top:3.5em;
+    right: 5.5em;
+    width: 3em;
+    height: 3em;
+    background-color: rgb(190, 97, 97);
+}
+.mars{
+    top: 1em;
+    left: 1em;
+    width: 40em;
+    height: 40em;
+    animation: orbit 90.5s linear infinite;
+    
 }
 
 @keyframes orbit {
