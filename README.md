@@ -1,1 +1,1 @@
-# COSMOX
+# cosmos-web-main
